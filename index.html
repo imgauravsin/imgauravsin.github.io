@@ -9,6 +9,11 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<style>
 		h1,
 		h2,
@@ -52,6 +57,13 @@
 			background: #dd4b39;
 			color: white;
 		}
+
+		.carousel-inner>.item>img,
+		.carousel-inner>.item>a>img {
+			width: 100%;
+			margin: auto;
+			height: 50%;
+		}
 	</style>
 </head>
 
@@ -68,7 +80,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 		<!-- Header -->
 		<header style="background-color:white;text-align:center;">
-			<h1 class="w3-xxxlarge"><span><img src="test.gif" width="100"
+			<h1 class="w3-xxxlarge"><span><img src="C:\Users\gauravsingh03\Downloads\test.gif" width="100"
 						height="100"></span><b>YOTV INDIA PRODUCTION</b></h1>
 			<h5>The Show of Big Things</h5>
 			<a href="#" class="fa fa-facebook"></a>
@@ -124,42 +136,65 @@ and is wrapped around the whole page content, except for the footer in this exam
 					</div>
 
 					<div class="w3-justify">
-						<img src="/w3images/man_hat.jpg" alt="Men in Hats" style="width:100%" class="w3-padding-16">
-						<p><strong>Hats!</strong> The trend this summer is hats for men!</p>
-						<p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl
-							vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
-							magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
-							mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo
-							condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-						<p class="w3-left"><button class="w3-button w3-white w3-border"
-								onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-						<p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies
-									 </b> <span class="w3-tag w3-white">2</span></button></p>
-						<p class="w3-clear"></p>
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+								<li data-target="#myCarousel" data-slide-to="3"></li>
+							</ol>
 
-						<!-- Example of comment field -->
-						<div id="demo2" style="display:none">
-							<div class="w3-row">
-								<hr>
-								<div class="w3-col l2 m3">
-									<img src="/w3images/girl_train.jpg" style="width:90px;">
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+
+								<div class="item active">
+									<img src="https://alkite.files.wordpress.com/2009/05/surfing-1.jpg" alt="Chania"
+										width="460" height="245">
+									<div class="carousel-caption">
+										<h3>Chania</h3>
+										<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+									</div>
 								</div>
-								<div class="w3-col l10 m9">
-									<h4>Amber <span class="w3-opacity w3-medium">April 26, 2015, 10:52 PM</span></h4>
-									<p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur
-										adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-										aliqua.</p><br>
+
+								<div class="item">
+									<img src="https://alkite.files.wordpress.com/2009/05/surfing-1.jpg" alt="Chania"
+										width="460" height="245">
+									<div class="carousel-caption">
+										<h3>Chania</h3>
+										<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+									</div>
 								</div>
+
+								<div class="item">
+									<img src="https://alkite.files.wordpress.com/2009/05/surfing-1.jpg" alt="Flower"
+										width="460" height="245">
+									<div class="carousel-caption">
+										<h3>Flowers</h3>
+										<p>Beatiful flowers in Kolymbari, Crete.</p>
+									</div>
+								</div>
+
+								<div class="item">
+									<img src="https://alkite.files.wordpress.com/2009/05/surfing-1.jpg" alt="Flower"
+										width="460" height="245">
+									<div class="carousel-caption">
+										<h3>Flowers</h3>
+										<p>Beatiful flowers in Kolymbari, Crete.</p>
+									</div>
+								</div>
+
 							</div>
-							<div class="w3-row w3-margin-bottom">
-								<div class="w3-col l2 m3">
-									<img src="/w3images/girl.jpg" style="width:90px;">
-								</div>
-								<div class="w3-col l10 m9">
-									<h4>Angie <span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM</span></h4>
-									<p>Love hats!!</p>
-								</div>
-							</div>
+
+							<!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -228,10 +263,16 @@ and is wrapped around the whole page content, except for the footer in this exam
 			<div class="w3-col l4">
 				<!-- About Card -->
 				<div class="w3-white w3-margin">
-					<div class="w3-container w3-black">
-						<h4>GAURAV SINGH</h4>
-						<p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a
-							interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+					<div class="w3-container w3-padding w3-black">
+						<h4>Follow Us</h4>
+					</div>
+					<div class="w3-container w3-xlarge w3-padding">
+						<i class="fa fa-facebook-official w3-hover-opacity"></i>
+						<i class="fa fa-instagram w3-hover-opacity"></i>
+						<i class="fa fa-snapchat w3-hover-opacity"></i>
+						<i class="fa fa-pinterest-p w3-hover-opacity"></i>
+						<i class="fa fa-twitter w3-hover-opacity"></i>
+						<i class="fa fa-linkedin w3-hover-opacity"></i>
 					</div>
 				</div>
 				<hr>
@@ -326,21 +367,6 @@ and is wrapped around the whole page content, except for the footer in this exam
 									class="w3-grayscale"></p>
 							<p><img src="/w3images/team4.jpg" alt="Jeans" style="width:100%"></p>
 						</div>
-					</div>
-				</div>
-				<hr>
-
-				<div class="w3-white w3-margin">
-					<div class="w3-container w3-padding w3-black">
-						<h4>Follow Me</h4>
-					</div>
-					<div class="w3-container w3-xlarge w3-padding">
-						<i class="fa fa-facebook-official w3-hover-opacity"></i>
-						<i class="fa fa-instagram w3-hover-opacity"></i>
-						<i class="fa fa-snapchat w3-hover-opacity"></i>
-						<i class="fa fa-pinterest-p w3-hover-opacity"></i>
-						<i class="fa fa-twitter w3-hover-opacity"></i>
-						<i class="fa fa-linkedin w3-hover-opacity"></i>
 					</div>
 				</div>
 				<hr>
