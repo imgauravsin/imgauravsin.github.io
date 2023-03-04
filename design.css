@@ -49,6 +49,9 @@ h1,
 			height: 50%;
 		} 
 		.grad{
+			background: #184478;
+			color: white;
+		}
+		.gradheader{
 			background: linear-gradient(to right, #184478 1%,#184478 51%,#3b9097 100%);
 			color:white;
-		}
