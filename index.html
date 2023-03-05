@@ -27,7 +27,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 		<div class="container w3-white" style="width: 100%;height: auto;">
 			<div class="row">
 				<div class="col-sm-6">
-					<h1>Dark Web Media Production<sup><img src="icon\test.gif" width="55"
+					<h1 style="font-size: 30px;">Dark Web Media Production<sup><img src="icon\test.gif" width="55"
 								height="50"></sup><br>
 					</h1>
 					</hr>
@@ -121,7 +121,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 				<!-- Photography entry -->
 				<div class="w3-col l12">
-					<div class="w3-container w3-padding w3-center gradheader">
+					<div class="w3-container w3-padding w3-center grad">
 						<h4>Our Photography Works</h4>
 					</div>
 					<div class="w3-container w3-margin w3-padding-large">
@@ -193,7 +193,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 			<!-- About/Information menu -->
 			<div class="w3-col l4">
 				<div class="w3-white w3-margin" style="margin-top: 0px!important;">
-					<div class="w3-container w3-padding grad">
+					<div class="w3-container w3-padding gradheader">
 						<h4>About Us</h4>
 					</div>
 					<div class="w3-container w3-white">
@@ -210,23 +210,23 @@ and is wrapped around the whole page content, except for the footer in this exam
 				<!--About members-->
 
 				<div class="w3-white w3-margin">
-					<div class="w3-container w3-padding grad">
+					<div class="w3-container w3-padding gradheader">
 						<h4>About Our Team Members</h4>
 					</div>
 					<ul class="w3-ul w3-hoverable w3-white">
-						<li class="w3-padding-16">
+						<li class="w3-padding-16" data-toggle="modal" data-target="#brijesh">
 							<img src="/icon/user.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
 							<span class="w3-large">Jonny Sam</span>
 							<br>
 							<span>Professional Photographer</span>
 						</li>
-						<li class="w3-padding-16">
+						<li class="w3-padding-16" data-toggle="modal" data-target="#gaurav">
 							<img src="/icon/user.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
 							<span class="w3-large">Adrew Tom</span>
 							<br>
 							<span>Professional Videographer</span>
 						</li>
-						<li class="w3-padding-16">
+						<li class="w3-padding-16" data-toggle="modal" data-target="#piyush">
 							<img src="/icon/user.png" alt="Image" class="w3-left w3-margin-right w3-sepia"
 								style="width:50px">
 							<span class="w3-large">Martyer Sam</span>
@@ -238,7 +238,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 				<hr>
 				<!-- Inspiration -->
 				<div class="w3-white w3-margin">
-					<div class="w3-container w3-padding grad">
+					<div class="w3-container w3-padding gradheader">
 						<h4>Latest Works</h4>
 					</div>
 					<div class="w3-row-padding w3-white w3-padding">
@@ -281,7 +281,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 				<!-- Subscribe -->
 				<div class="w3-white w3-margin">
-					<div class="w3-container w3-padding grad">
+					<div class="w3-container w3-padding gradheader">
 						<h4>Subscribe</h4>
 					</div>
 					<div class="w3-container w3-white">
@@ -300,6 +300,92 @@ and is wrapped around the whole page content, except for the footer in this exam
 		</div>
 
 		<!-- END w3-content -->
+	</div>
+	
+		<!-- Content Modal -->
+	<div class="modal fade" id="gaurav" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content w3-center">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h1 class="modal-title">Member Information</h1>
+				</div>
+				<div class="modal-body">
+					<img class="card-img-top" src="Photos\m.jpeg" width="300" height="300">
+					<h3>GAURAV SINGH</h3>
+					<h4>Professional Content Write</h4>
+					<h4>Connect Us &ndash;</h4>
+					<span><button href="#" class="btn btn-primary fa fa-facebook"> Facebook</button>
+						<button href="#" class="btn btn-danger fa fa-youtube"> YouTube</button>
+						<button href="#" class="btn btn-info fa fa-instagram"> Instagram</button></span>
+					<button href="#" class="btn btn-success fa fa-whatsapp"> WhatApps</button></span>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn gradheader" style="width:100%" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- Video Modal -->
+	<div class="modal fade" id="piyush" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content w3-center">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h1 class="modal-title">Member Information</h1>
+				</div>
+				<div class="modal-body">
+					<img class="card-img-top" src="Photos\m.jpeg" width="300" height="300">
+					<h3>Piyush Karki</h3>
+					<h4>Professional Videographer </h4>
+					<h4>Connect Us &ndash;</h4>
+					<span><button href="#" class="btn btn-primary fa fa-facebook"> Facebook</button>
+						<button href="#" class="btn btn-danger fa fa-youtube"> YouTube</button>
+						<button href="#" class="btn btn-info fa fa-instagram"> Instagram</button></span>
+					<button href="#" class="btn btn-success fa fa-whatsapp"> WhatApps</button></span>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn gradheader" style="width:100%" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- Photo Modal -->
+	<div class="modal fade" id="brijesh" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content w3-center">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h1 class="modal-title">Member Information</h1>
+				</div>
+				<div class="modal-body">
+					<img class="card-img-top" src="Photos\m.jpeg" width="300" height="300">
+					<h3>Brijesh Kumar</h3>
+					<h4>Professional Photographer </h4>
+					<h4>Connect Us &ndash;</h4>
+					<span><button href="#" class="btn btn-primary fa fa-facebook"> Facebook</button>
+						<button href="#" class="btn btn-danger fa fa-youtube"> YouTube</button>
+						<button href="#" class="btn btn-info fa fa-instagram"> Instagram</button></span>
+					<button href="#" class="btn btn-success fa fa-whatsapp"> WhatApps</button></span>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn gradheader" style="width:100%" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
 	</div>
 
 	<!-- Subscribe Modal -->
