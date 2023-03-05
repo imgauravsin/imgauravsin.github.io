@@ -40,10 +40,10 @@ h1,
 		.gradheader{
 			background: linear-gradient(to right, #184478 1%,#184478 51%,#3b9097 100%);
 			color:white;
-}
-#p{
-	    border-radius: 50%;
-}
-.w3-container:hover{
+		}
+		#p{
+	    		border-radius: 50%;
+		}
+		.shadow:hover{
 			box-shadow: 10px 10px 17px #ccc;
 		}
